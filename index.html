@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mohamad Moufak Saffaf | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Inter', sans-serif;
+}
+
+body{
+    background: radial-gradient(circle at top, #0f172a, #020617);
+    color:white;
+    line-height:1.6;
+}
+
+/* HERO */
+header{
+    text-align:center;
+    padding:110px 20px;
+    background: linear-gradient(135deg, #1e293b, #0f172a);
+    border-bottom:1px solid #334155;
+}
+
+header h1{
+    font-size:52px;
+    font-weight:700;
+    letter-spacing:1px;
+}
+
+header p{
+    color:#94a3b8;
+    margin-top:10px;
+    font-size:16px;
+}
+
+/* CTA BUTTON */
+.cta{
+    margin-top:25px;
+}
+
+.cta a{
+    display:inline-block;
+    padding:10px 18px;
+    margin:5px;
+    border-radius:8px;
+    background:#38bdf8;
+    color:#0f172a;
+    font-weight:600;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.cta a:hover{
+    background:#0ea5e9;
+}
+
+/* CONTAINER */
+.container{
+    max-width:1100px;
+    margin:auto;
+    padding:60px 20px;
+}
+
+/* SECTION */
+section{
+    margin-bottom:60px;
+}
+
+h2{
+    font-size:24px;
+    margin-bottom:20px;
+    border-left:4px solid #38bdf8;
+    padding-left:12px;
+    color:#e2e8f0;
+}
+
+/* CARD */
+.card{
+    background: rgba(30,41,59,0.55);
+    backdrop-filter: blur(12px);
+    border:1px solid #334155;
+    padding:25px;
+    border-radius:15px;
+    margin-bottom:20px;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+    border-color:#38bdf8;
+}
+
+/* SKILLS */
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.badge{
+    display:inline-block;
+    background:linear-gradient(135deg,#334155,#1e293b);
+    padding:6px 12px;
+    border-radius:20px;
+    margin:5px;
+    font-size:13px;
+    border:1px solid #475569;
+}
+
+/* LINKS */
+a{
+    color:#38bdf8;
+    text-decoration:none;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+
+/* BUTTON */
+.btn{
+    display:inline-block;
+    margin-top:10px;
+    padding:8px 14px;
+    border-radius:8px;
+    background:#38bdf8;
+    color:#0f172a;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#0ea5e9;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:30px;
+    border-top:1px solid #334155;
+    color:#94a3b8;
+}
+
+/* ANIMATION */
+.card, header{
+    animation:fadeIn 0.9s ease;
+}
+
+@keyframes fadeIn{
+    from{opacity:0; transform:translateY(20px);}
+    to{opacity:1; transform:translateY(0);}
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Mohamad Moufak Saffaf</h1>
+    <p>Full Stack Developer | AI & Mobile Developer</p>
+    <p>Damascus, Syria | sfafm396@gmail.com | +963 959 819 542</p>
+
+    <div class="cta">
+        <a href="#projects">View Projects</a>
+        <a href="mailto:sfafm396@gmail.com">Contact Me</a>
+    </div>
+</header>
+
+<div class="container">
+
+<section>
+<h2>About Me</h2>
+<div class="card">
+Final-year Computer Engineering student specializing in Artificial Intelligence.  
+Experienced in building full-stack web and mobile applications using modern technologies.  
+Passionate about developing real-world solutions using software and AI.
+</div>
+</section>
+
+<section>
+<h2>Education</h2>
+<div class="card">
+<b>Arab International University (AIU)</b><br>
+Computer Engineering – Artificial Intelligence<br>
+5th Year
+</div>
+</section>
+
+<section>
+<h2>Technical Skills</h2>
+<div class="skills">
+<span class="badge">HTML</span>
+<span class="badge">CSS</span>
+<span class="badge">JavaScript</span>
+<span class="badge">PHP</span>
+<span class="badge">MySQL</span>
+<span class="badge">Flutter</span>
+<span class="badge">Firebase</span>
+<span class="badge">Python</span>
+<span class="badge">AI Basics</span>
+<span class="badge">REST APIs</span>
+</div>
+</section>
+
+<section id="projects">
+<h2>Projects</h2>
+
+<div class="card">
+<h3>Maraya Restaurant</h3>
+<p>Full-stack digital menu system with API integration</p>
+<a class="btn" href="https://maraya.xo.je" target="_blank">Live Demo</a>
+</div>
+
+<div class="card">
+<h3>AuraFit Website</h3>
+<p>Modern responsive brand website with UI/UX focus</p>
+<a class="btn" href="http://aura-fit.xo.je" target="_blank">Live Demo</a>
+</div>
+
+<div class="card">
+<h3>Al-Saffaf Contracting Company Website</h3>
+<p>Professional corporate website with modern UI/UX design and responsive layout. Built as a real-world business solution focusing on scalability and performance.</p>
+<a class="btn" href="https://drive.google.com/file/d/1tYnHK08LE_LXE0_nu8F3NXZ87iBL4LGO/view" target="_blank">Watch Demo</a>
+</div>
+
+<div class="card">
+<h3>Dr.Car Mobile App</h3>
+<p>Car services mobile application (Flutter + Backend APIs)</p>
+<a class="btn" href="https://drive.google.com/file/d/1lhkY54Up1J2u9-Brz-JAe55UMazC1l_u/view" target="_blank">Watch Demo</a>
+</div>
+
+<div class="card">
+<h3>Medical AI Model</h3>
+<p>AI system predicting diseases from symptoms using Python</p>
+<a class="btn" href="https://drive.google.com/file/d/1W05SpZMQSEE3woDzmjkFZEjd8PdfmsSG/view?usp=drivesdk">Watch Demo</a>
+
+</div>
+
+</section>
+
+<section>
+<h2>Soft Skills</h2>
+<div class="card">
+Teamwork • Problem Solving • Fast Learning • Communication • Adaptability
+</div>
+</section>
+
+<section>
+<h2>Languages</h2>
+<div class="card">
+Arabic (Native) • English (level2: speaking , reading & writing)
+</div>
+</section>
+
+<section>
+<h2>Achievements</h2>
+<div class="card">
+✔ Built multiple real-world applications<br>
+✔ Full-stack + Mobile + AI experience<br>
+✔ Deployed live production projects
+</div>
+</section>
+
+</div>
+
+<footer>
+© 2026 Mohamad Moufak Saffaf | All Rights Reserved
+</footer>
+
+</body>
+</html>
