@@ -60,16 +60,63 @@ body{
 }
 
 nav a{
-    margin:0 15px;
-    color:white;
+    color:#fff;
+    text-decoration:none;
+    margin:0 18px;
+    font-weight:500;
+    transition:.3s;
+    position:relative;
+}
+
+nav a::after{
+    content:'';
+    position:absolute;
+    left:0;
+    bottom:-5px;
+    width:0;
+    height:2px;
+    background:#38bdf8;
+    transition:.3s;
+}
+
+nav a:hover::after{
+    width:100%;
+}
+
+nav a:hover{
+    color:#38bdf8;
 }
     
 /* HERO */
+    .hero-title{
+    font-size:28px;
+    color:#38bdf8;
+    margin-top:10px;
+    font-weight:600;
+}
 header{
     text-align:center;
     padding:110px 20px;
     background: linear-gradient(135deg, #1e293b, #0f172a);
     border-bottom:1px solid #334155;
+}
+    header{
+    position:relative;
+    overflow:hidden;
+}
+    header::before{
+    content:'';
+    position:absolute;
+    width:500px;
+    height:500px;
+    background:radial-gradient(
+    circle,
+    rgba(56,189,248,.15),
+    transparent
+    );
+
+    top:-250px;
+    right:-250px;
 }
 
 header h1{
@@ -187,12 +234,22 @@ h2{
 
 .badge{
     display:inline-block;
-    background:linear-gradient(135deg,#334155,#1e293b);
-    padding:6px 12px;
-    border-radius:20px;
-    margin:5px;
-    font-size:13px;
+    background:linear-gradient(
+    135deg,
+    #334155,
+    #1e293b
+    );
+    padding:8px 15px;
+    border-radius:25px;
+    margin:6px;
     border:1px solid #475569;
+    transition:.3s;
+}
+
+.badge:hover{
+    transform:translateY(-4px);
+    background:#38bdf8;
+    color:#020617;
 }
 
 /* LINKS */
@@ -256,6 +313,11 @@ footer{
     opacity:1;
     transform:translateY(0);
 }
+
+    html{
+    scroll-behavior:smooth;
+}
+    
 </style>
 </head>
 
@@ -271,8 +333,11 @@ footer{
     <div class="avatar">
 MS
 </div>
-    <h1>Mohamad Moufak Saffaf</h1>
-<h1>Building Intelligent Digital Experiences</h1>
+<h1>Mohamad Moufak Saffaf</h1>
+
+<h2 class="hero-title">
+Building Intelligent Digital Experiences
+</h2>
 
 <p>
 Full-Stack Developer & AI Engineer creating scalable web,
@@ -384,7 +449,7 @@ Computer Engineering – Artificial Intelligence<br>
 
 </section>
 
-<section>
+<section id="skills">
 <h2>Soft Skills</h2>
 <div class="card">
 Teamwork • Problem Solving • Fast Learning • Communication • Adaptability
@@ -409,6 +474,20 @@ Arabic (Native) • English (level2: speaking , reading & writing)
 
 </div>
 
+    <section id="contact">
+<h2>Contact</h2>
+
+<div class="card">
+<p>📧 Email: sfafm396@gmail.com</p>
+<p>📱 Phone: +963 959 819 542</p>
+
+<a class="btn" href="mailto:sfafm396@gmail.com">
+Send Email
+</a>
+</div>
+
+</section>
+    
 <footer>
 © 2026 Mohamad Moufak Saffaf | All Rights Reserved
 </footer>
